@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUMANTRI — $ whoami</title>
+  <meta name="description" content="Portofolio SUMANTRI — Staf Administrasi & Manajemen Data · 8+ tahun pengalaman · Python, SIRS Online, Klaim BPJS (INA-CBGs), AI" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%2304060a'/><text x='50' y='72' font-size='58' text-anchor='middle' fill='%2333ff77' font-family='monospace'>&gt;_</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- background: matrix rain -->
+  <canvas id="matrix" aria-hidden="true"></canvas>
+  <!-- CRT overlay -->
+  <div class="crt" aria-hidden="true"></div>
+
+  <!-- ============ BOOT OVERLAY ============ -->
+  <div id="boot" aria-live="polite">
+    <div class="boot-window">
+      <div class="boot-titlebar">
+        <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+        <span class="boot-title">SUMANTRI BIOS — Secure Boot</span>
+      </div>
+      <pre id="boot-log" class="boot-log"></pre>
+    </div>
+    <div class="boot-skip" id="boot-skip">[ klik di mana saja untuk skip ]</div>
+  </div>
+
+  <!-- ============ MAIN SITE ============ -->
+  <div id="site" hidden>
+
+    <!-- NAV -->
+    <header class="nav">
+      <div class="nav-inner">
+        <a class="nav-brand" href="#whoami"><span class="prompt">$</span> <span class="brand-name">sumantri</span><span class="cursor"></span></a>
+        <nav class="nav-tabs" aria-label="Navigasi">
+          <a href="#whoami" class="tab active" data-target="whoami">whoami</a>
+          <a href="#tentang" class="tab" data-target="tentang">tentang</a>
+          <a href="#pengalaman" class="tab" data-target="pengalaman">pengalaman</a>
+          <a href="#keahlian" class="tab" data-target="keahlian">keahlian</a>
+          <a href="#pendidikan" class="tab" data-target="pendidikan">pendidikan</a>
+          <a href="#proyek" class="tab" data-target="proyek">proyek</a>
+          <a href="#youtube" class="tab" data-target="youtube">youtube</a>
+          <a href="#kontak" class="tab" data-target="kontak">kontak</a>
+        </nav>
+        <span class="nav-status" id="nav-status" title="status sistem">● ONLINE</span>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO / WHOAMI ============ -->
+      <section id="whoami" class="section hero">
+        <div class="terminal-window hero-term">
+          <div class="titlebar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="title-text">sumantri@rs:~$</span>
+          </div>
+          <div class="term-body">
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">whoami</span></p>
+            <p class="line"><span class="ok">➜</span> <span class="name-big">SUMANTRI</span> <span class="dim">// Sumantri Farrel Prasraya</span></p>
+            <p class="line"><span class="prompt">$</span> <span class="cmd">cat</span> ./jabatan.txt <span class="dim">→</span></p>
+            <p class="line"><span class="ok">Staf Administrasi</span> <span class="dim">&</span> <span class="cyan">Manajemen Data</span></p>
+
+            <pre class="ascii-logo" aria-label="ASCII logo SUMANTRI">
+███████╗██╗   ██╗███╗   ███╗ █████╗ ███╗   ██╗████████╗██████╗ ██╗
+██╔════╝██║   ██║████╗ ████║██╔══██╗████╗  ██║╚══██╔══╝██╔══██╗██║
+███████╗██║   ██║██╔████╔██║███████║██╔██╗ ██║   ██║   ██████╔╝██║
+╚════██║██║   ██║██║╚██╔╝██║██╔══██║██║╚██╗██║   ██║   ██╔══██╗██║
+███████║╚██████╔╝██║ ╚═╝ ██║██║  ██║██║ ╚████║   ██║   ██║  ██║██║
+╚══════╝ ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝   ╚═╝   ╚═╝  ╚═╝╚═╝</pre>
+
+            <p class="line tagline"><span class="prompt">$</span> <span class="cmd">echo</span> $ROLE <span class="dim">→</span></p>
+            <p class="line typed-line" id="typed-role"></p>
+
+            <p class="line dim status-line">
+              <span class="ok">●</span> status: <span class="ok">TERBUKA UNTUK KERJA</span>
+              <span class="sep">|</span> lokasi: <span>Palembang, Sumsel</span>
+              <span class="sep">|</span> pengalaman: <span>8+ tahun</span>
+              <span class="sep">|</span> kesehatan: <span>RS</span>
+            </p>
+
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">ls</span> ./link_cepat</p>
+            <div class="quick-links">
+              <a href="#pengalaman" class="cmd-btn" data-cmd="cat ./pengalaman.txt">./pengalaman</a>
+              <a href="#keahlian" class="cmd-btn" data-cmd="apt list">./keahlian</a>
+              <a href="https://github.com/Farrel0xx" target="_blank" rel="noopener" class="cmd-btn" data-cmd="git clone github.com/Farrel0xx">./github</a>
+              <a href="#kontak" class="cmd-btn" data-cmd="sendmail --to sumantri">./kontak</a>
+            </div>
+            <p class="line dim subtle"><span class="prompt">$</span> <span class="cmd">echo</span> "learn → build → break → fix → repeat"</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TENTANG ============ -->
+      <section id="tentang" class="section">
+        <div class="terminal-window">
+          <div class="titlebar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="title-text">~ — cat tentang.md</span>
+          </div>
+          <div class="term-body">
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">cat</span> ~/tentang.md</p>
+            <p class="line"><span class="comment"># Tentang saya</span></p>
+            <p class="line paragraph">
+              Profesional <span class="ok">administrasi dan manajemen data</span> dengan
+              pengalaman <span class="ok">8+ tahun</span> di institusi layanan kesehatan.
+              Saya mengotomatisasi alur kerja data dengan <span class="ok">Python</span> dan
+              memanfaatkan <span class="cyan">AI tools</span> untuk produktivitas —
+              hasilnya, efisiensi pengolahan data meningkat <span class="amber">30–90%</span>.
+            </p>
+            <p class="line paragraph">
+              Mengikuti <span class="ok">HEALTHKATHON 2025</span> (BPJS Kesehatan) pada
+              kategori <span class="cyan">Artificial Intelligence</span> dengan proyek
+              <span class="ok">"JKN CLAIM SHIELD"</span> 🏆.
+            </p>
+            <p class="line paragraph">
+              Filosofi saya: <span class="amber">build</span>, <span class="amber">break</span>,
+              dan <span class="amber">fix</span> — lalu ulangi, setiap hari.
+            </p>
+
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">uptime</span> <span class="comment"># statistik karier</span></p>
+            <div class="stats-grid">
+              <div class="stat"><span class="stat-num ok">8+</span><span class="stat-label">tahun pengalaman</span></div>
+              <div class="stat"><span class="stat-num ok">30–90%</span><span class="stat-label">peningkatan efisiensi data</span></div>
+              <div class="stat"><span class="stat-num ok">100%</span><span class="stat-label">kepatuhan laporan SIRS</span></div>
+              <div class="stat"><span class="stat-num ok">2025</span><span class="stat-label">HEALTHKATHON</span></div>
+            </div>
+
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">echo</span> $FILOSOFI</p>
+            <p class="line philosophy"><span class="ok">learn</span> <span class="dim">→</span> <span class="cyan">build</span> <span class="dim">→</span> <span class="amber">break</span> <span class="dim">→</span> <span class="amber">fix</span> <span class="dim">→</span> <span class="ok">repeat</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PENGALAMAN ============ -->
+      <section id="pengalaman" class="section">
+        <div class="terminal-window">
+          <div class="titlebar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="title-text">~ — cat pengalaman.txt</span>
+          </div>
+          <div class="term-body">
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">cat</span> ~/pengalaman.txt <span class="comment"># 8+ tahun di layanan kesehatan</span></p>
+
+            <div class="exp-item">
+              <p class="exp-head"><span class="ok">●</span> <span class="exp-role">Otomatisasi Data</span></p>
+              <p class="exp-desc">Merancang &amp; mengimplementasikan alat otomatisasi berbasis <span class="cyan">Python</span> untuk mempercepat alur kerja data pasien &amp; meningkatkan akurasi — <span class="amber">efisiensi naik 30–90%</span>.</p>
+            </div>
+
+            <div class="exp-item">
+              <p class="exp-head"><span class="ok">●</span> <span class="exp-role">Kepatuhan &amp; Pelaporan SIRS</span></p>
+              <p class="exp-desc">Bertanggung jawab penuh atas input &amp; pelaporan data <span class="cyan">SIRS Online</span> (Aplikasi Kemkes) — kepatuhan laporan bulanan &amp; tahunan <span class="amber">100%</span>.</p>
+            </div>
+
+            <div class="exp-item">
+              <p class="exp-head"><span class="ok">●</span> <span class="exp-role">Klaim &amp; Koding BPJS</span></p>
+              <p class="exp-desc">Mengelola pengumpulan, pengelolaan, &amp; pemberkasan data pasien — termasuk koordinasi koding &amp; administrasi klaim <span class="cyan">BPJS (INA-CBGs)</span>.</p>
+            </div>
+
+            <div class="exp-item">
+              <p class="exp-head"><span class="ok">●</span> <span class="exp-role">Koordinasi Operasional</span></p>
+              <p class="exp-desc">Koordinator penerimaan pasien rawat inap &amp; penanggung jawab <span class="cyan">Laporan Harian Rumah Sakit</span> (Manager on Duty).</p>
+            </div>
+
+            <div class="exp-item">
+              <p class="exp-head"><span class="ok">●</span> <span class="exp-role">Penerimaan Pasien &amp; Rekam Medis</span></p>
+              <p class="exp-desc">Menangani input data pasien rawat jalan &amp; rawat inap, serta proses <span class="cyan">pemulangan rekam medis</span> pasien yang telah selesai berobat.</p>
+            </div>
+
+            <p class="line dim subtle"><span class="prompt">$</span> <span class="cmd">history</span> <span class="comment"># 8+ tahun · institusi layanan kesehatan</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ KEAHLIAN ============ -->
+      <section id="keahlian" class="section">
+        <div class="terminal-window">
+          <div class="titlebar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="title-text">~ — apt list --installed</span>
+          </div>
+          <div class="term-body">
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">apt</span> list --installed <span class="comment">| grep -i kompetensi</span></p>
+
+            <p class="line group"><span class="comment"># Data &amp; Perkantoran</span></p>
+            <div class="skill-row">
+              <span class="skill">microsoft-excel<span class="ver">advanced</span><span class="ok"> ✓</span></span>
+              <span class="skill">powerpoint<span class="ver">advanced</span><span class="ok"> ✓</span></span>
+              <span class="skill">rekam-medis<span class="ver">admin</span><span class="ok"> ✓</span></span>
+            </div>
+
+            <p class="line group"><span class="comment"># Otomatisasi &amp; AI</span></p>
+            <div class="skill-row">
+              <span class="skill">python<span class="ver">otomatisasi</span><span class="ok"> ✓</span></span>
+              <span class="skill">machine-learning<span class="ver">dasar</span><span class="ok"> ✓</span></span>
+              <span class="skill">ai-tools<span class="ver">produktivitas</span><span class="ok"> ✓</span></span>
+            </div>
+
+            <p class="line group"><span class="comment"># Kesehatan &amp; BPJS</span></p>
+            <div class="skill-row">
+              <span class="skill">sirs-online<span class="ver">kemkes</span><span class="ok"> ✓</span></span>
+              <span class="skill">klaim-bpjs<span class="ver">ina-cbgs</span><span class="ok"> ✓</span></span>
+              <span class="skill">koding<span class="ver">klaim</span><span class="ok"> ✓</span></span>
+            </div>
+
+            <p class="line group"><span class="comment"># Soft Skills</span></p>
+            <div class="skill-row">
+              <span class="skill">ketelitian<span class="ver">akurasi</span><span class="ok"> ✓</span></span>
+              <span class="skill">problem-solving<span class="ver">analitis</span><span class="ok"> ✓</span></span>
+              <span class="skill">kerja-tim<span class="ver">kolaborasi</span><span class="ok"> ✓</span></span>
+              <span class="skill">manajemen-waktu<span class="ver">prioritas</span><span class="ok"> ✓</span></span>
+              <span class="skill">adaptif-teknologi<span class="ver">cepat</span><span class="ok"> ✓</span></span>
+            </div>
+
+            <p class="line group"><span class="comment"># Bahasa</span></p>
+            <div class="skill-row">
+              <span class="skill">indonesia<span class="ver">native</span><span class="ok"> ✓</span></span>
+              <span class="skill">inggris<span class="ver">menengah</span><span class="ok"> ✓</span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PENDIDIKAN & SERTIFIKASI ============ -->
+      <section id="pendidikan" class="section">
+        <div class="terminal-window">
+          <div class="titlebar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="title-text">~ — cat pendidikan.txt</span>
+          </div>
+          <div class="term-body">
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">cat</span> ~/pendidikan.txt</p>
+
+            <p class="line group"><span class="comment"># Pendidikan</span></p>
+            <div class="edu-item">
+              <div class="edu-left"><span class="edu-badge">SMK</span></div>
+              <div class="edu-right">
+                <span class="edu-name">SMK Muhammadiyah 2 Palembang</span>
+                <span class="edu-major">Teknik Komputer &amp; Jaringan</span>
+                <span class="edu-year dim">2014 – 2017</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-left"><span class="edu-badge">SMP</span></div>
+              <div class="edu-right">
+                <span class="edu-name">SMP Daarul Aitam Palembang</span>
+                <span class="edu-year dim">2011 – 2014</span>
+              </div>
+            </div>
+            <div class="edu-item">
+              <div class="edu-left"><span class="edu-badge">SD</span></div>
+              <div class="edu-right">
+                <span class="edu-name">SDN 99 Palembang</span>
+                <span class="edu-year dim">2006 – 2011</span>
+              </div>
+            </div>
+
+            <p class="line group"><span class="comment"># Sertifikasi &amp; Pelatihan</span></p>
+            <div class="cert-list">
+              <div class="cert-item"><span class="ok">✓</span> Machine Learning &amp; Data Scientist</div>
+              <div class="cert-item"><span class="ok">✓</span> IT &amp; Cybersecurity Awareness</div>
+              <div class="cert-item"><span class="ok">✓</span> Microsoft Office Specialist</div>
+              <div class="cert-item"><span class="ok">✓</span> AI Fundamentals</div>
+              <div class="cert-item"><span class="ok">✓</span> Microsoft Learn Achievements <span class="dim">(Des 2025)</span></div>
+              <div class="cert-item"><span class="amber">🏆</span> HEALTHKATHON 2025 — Kategori AI <span class="dim">(BPJS Kesehatan)</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROYEK ============ -->
+      <section id="proyek" class="section">
+        <div class="terminal-window">
+          <div class="titlebar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="title-text">~ — ls ~/proyek</span>
+          </div>
+          <div class="term-body">
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">ls</span> -la ~/proyek <span class="comment"># 6 item</span></p>
+            <div class="projects-grid">
+
+              <!-- Neurova -->
+              <article class="project">
+                <div class="p-titlebar"><span class="p-dots">●●●</span><span class="p-name">neurova/</span><span class="p-tag ai">AI</span></div>
+                <div class="p-body">
+                  <p class="p-cmd"><span class="prompt">$</span> <span class="cmd">run</span> ./neurova --ai</p>
+                  <h3 class="p-name-big">Neurova AI</h3>
+                  <p class="p-desc">Aplikasi kesehatan bertenaga AI — "Revolutionizing Healthcare with AI" (Masa Percobaan 🔥)</p>
+                  <div class="p-tags"><span class="tag">python</span><span class="tag">ai</span><span class="tag">kesehatan</span></div>
+                  <div class="p-links">
+                    <a href="https://github.com/Farrel0xx/Neurova" target="_blank" rel="noopener">[github]</a>
+                    <a href="https://www.youtube.com/watch?v=br1oPljSgl4" target="_blank" rel="noopener">[video]</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- JKN CLAIM SHIELD -->
+              <article class="project">
+                <div class="p-titlebar"><span class="p-dots">●●●</span><span class="p-name">jkn-claim-shield/</span><span class="p-tag win">🏆</span></div>
+                <div class="p-body">
+                  <p class="p-cmd"><span class="prompt">$</span> <span class="cmd">run</span> ./shield --healthkathon-2025</p>
+                  <h3 class="p-name-big">JKN CLAIM SHIELD</h3>
+                  <p class="p-desc">Proyek HEALTHKATHON 2025 (BPJS Kesehatan) — inovasi health-tech untuk klaim asuransi nasional Indonesia.</p>
+                  <div class="p-tags"><span class="tag">healthtech</span><span class="tag">ai</span><span class="tag">bpjs</span></div>
+                  <div class="p-links">
+                    <a href="https://www.youtube.com/watch?v=xc0QYhEjd04" target="_blank" rel="noopener">[video perjalanan]</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 3D-slice-brain -->
+              <article class="project">
+                <div class="p-titlebar"><span class="p-dots">●●●</span><span class="p-name">3d-slice-brain/</span><span class="p-tag py">DICOM</span></div>
+                <div class="p-body">
+                  <p class="p-cmd"><span class="prompt">$</span> <span class="cmd">run</span> ./3dslice --brain --bandingkan</p>
+                  <h3 class="p-name-big">3D-slice-brain</h3>
+                  <p class="p-desc">Alat visualisasi DICOM untuk membandingkan dua pemindaian medis berdampingan — dioptimalkan untuk studi segmentasi tumor.</p>
+                  <div class="p-tags"><span class="tag">python</span><span class="tag">dicom</span><span class="tag">citra-medis</span></div>
+                  <div class="p-links">
+                    <a href="https://github.com/Farrel0xx/3D-slice-brain" target="_blank" rel="noopener">[github]</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- FARREL0XX Voice -->
+              <article class="project">
+                <div class="p-titlebar"><span class="p-dots">●●●</span><span class="p-name">suara-farrel0xx/</span><span class="p-tag ai">SUARA</span></div>
+                <div class="p-body">
+                  <p class="p-cmd"><span class="prompt">$</span> <span class="cmd">run</span> ./voice --asisten</p>
+                  <h3 class="p-name-big">Asisten Suara FARREL0XX</h3>
+                  <p class="p-desc">Asisten suara AI buatan sendiri untuk Windows — agen PowerShell zero-dependency, dibangun dari nol.</p>
+                  <div class="p-tags"><span class="tag">ai</span><span class="tag">suara</span><span class="tag">powershell</span></div>
+                  <div class="p-links">
+                    <a href="https://www.youtube.com/watch?v=UysyxnCAfb8" target="_blank" rel="noopener">[demo suara]</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- AnswerAI -->
+              <article class="project">
+                <div class="p-titlebar"><span class="p-dots">●●●</span><span class="p-name">answerai/</span><span class="p-tag py">PDF</span></div>
+                <div class="p-body">
+                  <p class="p-cmd"><span class="prompt">$</span> <span class="cmd">run</span> ./answerai --input soal.pdf</p>
+                  <h3 class="p-name-big">AnswerAI</h3>
+                  <p class="p-desc">Ekstraksi kunci jawaban bertenaga AI dari lembar soal PDF — upload PDF, jawaban langsung dihasilkan.</p>
+                  <div class="p-tags"><span class="tag">python</span><span class="tag">ai</span><span class="tag">pdf</span></div>
+                  <div class="p-links">
+                    <a href="https://www.youtube.com/watch?v=lTQPzglfiiw" target="_blank" rel="noopener">[demo]</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- ZenBox -->
+              <article class="project">
+                <div class="p-titlebar"><span class="p-dots">●●●</span><span class="p-name">zenbox/</span><span class="p-tag web">WEB</span></div>
+                <div class="p-body">
+                  <p class="p-cmd"><span class="prompt">$</span> <span class="cmd">run</span> ./zenbox --start</p>
+                  <h3 class="p-name-big">ZenBox</h3>
+                  <p class="p-desc">Codespace web pribadi — lingkungan cloud bergaya Android dengan terminal + proxy Claude Zen di browser.</p>
+                  <div class="p-tags"><span class="tag">web</span><span class="tag">cloud</span><span class="tag">terminal</span></div>
+                  <div class="p-links"><span class="dim">[lokal]</span></div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ YOUTUBE ============ -->
+      <section id="youtube" class="section">
+        <div class="terminal-window">
+          <div class="titlebar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="title-text">~ — yt @mantri0xx</span>
+          </div>
+          <div class="term-body">
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">yt</span> @mantri0xx <span class="comment"># subscribe ▶</span></p>
+            <div class="yt-channel">
+              <div class="yt-info">
+                <span class="yt-icon">▶</span>
+                <div>
+                  <h3 class="yt-name">Mantri0xx_ <span class="yt-badge">channel</span></h3>
+                  <p class="yt-desc dim">Mendokumentasikan perjalanan — healthtech, AI, dan membangun tools sendiri. Dari HEALTHKATHON sampai asisten suara.</p>
+                </div>
+                <a class="yt-sub" href="https://www.youtube.com/@mantri0xx" target="_blank" rel="noopener">SUBSCRIBE</a>
+              </div>
+            </div>
+
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">ls</span> ./video <span class="comment"># upload terbaru</span></p>
+            <div class="videos">
+              <a class="video" href="https://www.youtube.com/watch?v=xc0QYhEjd04" target="_blank" rel="noopener">
+                <img loading="lazy" src="https://i1.ytimg.com/vi/xc0QYhEjd04/hqdefault.jpg" alt="thumbnail" />
+                <div class="v-meta">
+                  <span class="v-title">📌 My Journey at HEALTHKATHON COMPETITION 2025 🏆 | BPJS Kesehatan</span>
+                  <span class="v-date dim">2026-08-08</span>
+                </div>
+                <span class="v-play">▶</span>
+              </a>
+              <a class="video" href="https://www.youtube.com/watch?v=UysyxnCAfb8" target="_blank" rel="noopener">
+                <img loading="lazy" src="https://i1.ytimg.com/vi/UysyxnCAfb8/hqdefault.jpg" alt="thumbnail" />
+                <div class="v-meta">
+                  <span class="v-title">BUILDING MY OWN AI VOICE ASSISTANT (VOICE DEMO)</span>
+                  <span class="v-date dim">2026-08-08</span>
+                </div>
+                <span class="v-play">▶</span>
+              </a>
+              <a class="video" href="https://www.youtube.com/watch?v=lTQPzglfiiw" target="_blank" rel="noopener">
+                <img loading="lazy" src="https://i1.ytimg.com/vi/lTQPzglfiiw/hqdefault.jpg" alt="thumbnail" />
+                <div class="v-meta">
+                  <span class="v-title">AnswerAI - Kunci Jawaban Soal PDF.</span>
+                  <span class="v-date dim">2025-02-10</span>
+                </div>
+                <span class="v-play">▶</span>
+              </a>
+              <a class="video" href="https://www.youtube.com/watch?v=br1oPljSgl4" target="_blank" rel="noopener">
+                <img loading="lazy" src="https://i1.ytimg.com/vi/br1oPljSgl4/hqdefault.jpg" alt="thumbnail" />
+                <div class="v-meta">
+                  <span class="v-title">Neurova App | AI-Powered Healthcare &amp; Innovation (Trial Period) 🚀</span>
+                  <span class="v-date dim">2025-02-09</span>
+                </div>
+                <span class="v-play">▶</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ KONTAK ============ -->
+      <section id="kontak" class="section">
+        <div class="terminal-window">
+          <div class="titlebar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="title-text">~ — cat .config/kontak.cfg</span>
+          </div>
+          <div class="term-body">
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">cat</span> ~/.config/kontak.cfg</p>
+            <p class="line"><span class="comment"># hubungi saya — pilih saluran</span></p>
+            <div class="contact-row" data-copy="083839256629">
+              <span class="prompt">$</span> <span class="cmd">wa</span> chat <span class="dim">→</span> <a href="https://wa.me/6283839256629" target="_blank" rel="noopener">083839256629</a>
+              <button class="copy-btn" title="salin">⧉</button>
+            </div>
+            <div class="contact-row" data-copy="mantri.suman17x@gmail.com">
+              <span class="prompt">$</span> <span class="cmd">mail</span> --to <span class="dim">→</span> <a href="mailto:mantri.suman17x@gmail.com">mantri.suman17x@gmail.com</a>
+              <button class="copy-btn" title="salin">⧉</button>
+            </div>
+            <div class="contact-row" data-copy="https://github.com/Farrel0xx">
+              <span class="prompt">$</span> <span class="cmd">gh</span> profil <span class="dim">→</span> <a href="https://github.com/Farrel0xx" target="_blank" rel="noopener">github.com/Farrel0xx</a>
+              <button class="copy-btn" title="salin">⧉</button>
+            </div>
+            <div class="contact-row" data-copy="https://www.youtube.com/@mantri0xx">
+              <span class="prompt">$</span> <span class="cmd">yt</span> channel <span class="dim">→</span> <a href="https://www.youtube.com/@mantri0xx" target="_blank" rel="noopener">youtube.com/@mantri0xx</a>
+              <button class="copy-btn" title="salin">⧉</button>
+            </div>
+            <div class="contact-row" data-copy="Palembang, Sumatera Selatan">
+              <span class="prompt">$</span> <span class="cmd">map</span> lokasi <span class="dim">→</span> <span>Palembang, Sumatera Selatan</span>
+              <button class="copy-btn" title="salin">⧉</button>
+            </div>
+            <p class="line dim subtle"><span class="prompt">$</span> <span class="cmd">echo</span> "terbuka untuk: admin data · kesehatan · klaim BPJS · AI &amp; otomatisasi · remote"</p>
+            <p class="line"><span class="prompt">$</span> <span class="cmd">./kirim_pesan</span> <span class="blink-block">▊</span></p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p><span class="prompt">$</span> <span class="cmd">exit</span></p>
+        <p class="dim">© 2026 SUMANTRI · dibuat dengan ♥ + ☕ di Palembang · ditenagai Python &amp; Claude</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
