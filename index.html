@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SUMANTRI — $ whoami</title>
-  <meta name="description" content="Portofolio SUMANTRI — Staf Administrasi & Manajemen Data · 8+ tahun pengalaman · Python, SIRS Online, Klaim BPJS (INA-CBGs), AI" />
+  <meta name="description" content="Portofolio SUMANTRI — Staf Administrasi & Manajemen Data · 8+ tahun pengalaman · Python, SIRS Online, Klaim BPJS (INA-CBGs), AI, Web Developer" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='14' fill='%2304060a'/><text x='50' y='72' font-size='58' text-anchor='middle' fill='%2333ff77' font-family='monospace'>&gt;_</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,6 +15,10 @@
 
   <!-- background: matrix rain -->
   <canvas id="matrix" aria-hidden="true"></canvas>
+  <!-- particles -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <!-- scroll progress -->
+  <div class="scroll-progress" id="scroll-progress"></div>
   <!-- CRT overlay -->
   <div class="crt" aria-hidden="true"></div>
 
@@ -44,6 +48,7 @@
           <a href="#keahlian" class="tab" data-target="keahlian">keahlian</a>
           <a href="#pendidikan" class="tab" data-target="pendidikan">pendidikan</a>
           <a href="#proyek" class="tab" data-target="proyek">proyek</a>
+          <a href="#webdev" class="tab" data-target="webdev">webdev</a>
           <a href="#youtube" class="tab" data-target="youtube">youtube</a>
           <a href="#kontak" class="tab" data-target="kontak">kontak</a>
         </nav>
@@ -64,6 +69,22 @@
             <p class="line"><span class="ok">➜</span> <span class="name-big">SUMANTRI</span> <span class="dim">// Sumantri Farrel Prasraya</span></p>
             <p class="line"><span class="prompt">$</span> <span class="cmd">cat</span> ./jabatan.txt <span class="dim">→</span></p>
             <p class="line"><span class="ok">Staf Administrasi</span> <span class="dim">&</span> <span class="cyan">Manajemen Data</span></p>
+
+            <!-- PROFILE PHOTO -->
+            <div class="profile-wrap">
+              <div class="profile-frame">
+                <img src="foto_suman.jpg" alt="Sumantri Farrel Prasraya" loading="lazy" />
+                <div class="profile-label">mantri0xx_</div>
+              </div>
+              <div class="profile-info">
+                <p class="line"><span class="holo-badge">&lt;xss&gt; mantri0xx_ // researcher</span></p>
+                <div class="status-row">
+                  <span class="status-item"><span class="status-dot"></span> Open to Work</span>
+                  <span class="status-item"><span class="status-dot cyan"></span> Palembang, Sumsel</span>
+                  <span class="status-item"><span class="status-dot amber"></span> 8+ tahun</span>
+                </div>
+              </div>
+            </div>
 
             <pre class="ascii-logo" aria-label="ASCII logo SUMANTRI">
 ███████╗██╗   ██╗███╗   ███╗ █████╗ ███╗   ██╗████████╗██████╗ ██╗
@@ -87,7 +108,8 @@
             <div class="quick-links">
               <a href="#pengalaman" class="cmd-btn" data-cmd="cat ./pengalaman.txt">./pengalaman</a>
               <a href="#keahlian" class="cmd-btn" data-cmd="apt list">./keahlian</a>
-              <a href="https://github.com/Farrel0xx" target="_blank" rel="noopener" class="cmd-btn" data-cmd="git clone github.com/Farrel0xx">./github</a>
+              <a href="#webdev" class="cmd-btn" data-cmd="ls ./webdev">./webdev</a>
+              <a href="https://github.com/mantri0xx" target="_blank" rel="noopener" class="cmd-btn" data-cmd="git clone github.com/mantri0xx">./github</a>
               <a href="#kontak" class="cmd-btn" data-cmd="sendmail --to sumantri">./kontak</a>
             </div>
             <p class="line dim subtle"><span class="prompt">$</span> <span class="cmd">echo</span> "learn → build → break → fix → repeat"</p>
@@ -118,6 +140,13 @@
               <span class="ok">"JKN CLAIM SHIELD"</span> 🏆.
             </p>
             <p class="line paragraph">
+              Selain kesehatan, saya juga <span class="cyan">web developer</span> —
+              membangun website interaktif, landing page, dan aplikasi EMR.
+              Tech stack: <span class="ok">HTML/CSS/JS</span>, <span class="ok">Next.js</span>,
+              <span class="ok">Three.js</span>, <span class="ok">Prisma</span>, <span class="ok">PostgreSQL</span>.
+              Aktif di <span class="cyan">XSS research</span> &amp; security testing.
+            </p>
+            <p class="line paragraph">
               Filosofi saya: <span class="amber">build</span>, <span class="amber">break</span>,
               dan <span class="amber">fix</span> — lalu ulangi, setiap hari.
             </p>
@@ -127,7 +156,8 @@
               <div class="stat"><span class="stat-num ok">8+</span><span class="stat-label">tahun pengalaman</span></div>
               <div class="stat"><span class="stat-num ok">30–90%</span><span class="stat-label">peningkatan efisiensi data</span></div>
               <div class="stat"><span class="stat-num ok">100%</span><span class="stat-label">kepatuhan laporan SIRS</span></div>
-              <div class="stat"><span class="stat-num ok">2025</span><span class="stat-label">HEALTHKATHON</span></div>
+              <div class="stat"><span class="stat-num ok">9</span><span class="stat-label">proyek selesai</span></div>
+              <div class="stat"><span class="stat-num cyan">∞</span><span class="stat-label">kopi terseduh</span></div>
             </div>
 
             <p class="line dim"><span class="prompt">$</span> <span class="cmd">echo</span> $FILOSOFI</p>
@@ -171,7 +201,12 @@
               <p class="exp-desc">Menangani input data pasien rawat jalan &amp; rawat inap, serta proses <span class="cyan">pemulangan rekam medis</span> pasien yang telah selesai berobat.</p>
             </div>
 
-            <p class="line dim subtle"><span class="prompt">$</span> <span class="cmd">history</span> <span class="comment"># 8+ tahun · institusi layanan kesehatan</span></p>
+            <div class="exp-item">
+              <p class="exp-head"><span class="ok">●</span> <span class="exp-role">Web Development</span></p>
+              <p class="exp-desc">Membangun website interaktif &amp; aplikasi web — landing page, 3D visualization, EMR (Electronic Medical Records) dengan <span class="cyan">Next.js</span>, <span class="cyan">Three.js</span>, <span class="cyan">Prisma</span>.</p>
+            </div>
+
+            <p class="line dim subtle"><span class="prompt">$</span> <span class="cmd">history</span> <span class="comment"># 8+ tahun · institusi layanan kesehatan + web dev</span></p>
           </div>
         </div>
       </section>
@@ -198,6 +233,18 @@
               <span class="skill">python<span class="ver">otomatisasi</span><span class="ok"> ✓</span></span>
               <span class="skill">machine-learning<span class="ver">dasar</span><span class="ok"> ✓</span></span>
               <span class="skill">ai-tools<span class="ver">produktivitas</span><span class="ok"> ✓</span></span>
+            </div>
+
+            <p class="line group"><span class="comment"># Web Development</span></p>
+            <div class="skill-row">
+              <span class="skill">html5<span class="ver">semantic</span><span class="ok"> ✓</span></span>
+              <span class="skill">css3<span class="ver">grid/flex</span><span class="ok"> ✓</span></span>
+              <span class="skill">javascript<span class="ver">vanilla</span><span class="ok"> ✓</span></span>
+              <span class="skill">three.js<span class="ver">3d</span><span class="ok"> ✓</span></span>
+              <span class="skill">next.js<span class="ver">app-router</span><span class="ok"> ✓</span></span>
+              <span class="skill">prisma<span class="ver">orm</span><span class="ok"> ✓</span></span>
+              <span class="skill">postgresql<span class="ver">database</span><span class="ok"> ✓</span></span>
+              <span class="skill">tailwind-css<span class="ver">utility</span><span class="ok"> ✓</span></span>
             </div>
 
             <p class="line group"><span class="comment"># Kesehatan &amp; BPJS</span></p>
@@ -237,6 +284,14 @@
 
             <p class="line group"><span class="comment"># Pendidikan</span></p>
             <div class="edu-item">
+              <div class="edu-left"><span class="edu-badge" style="background:var(--cyan);color:#000">UNIV</span></div>
+              <div class="edu-right">
+                <span class="edu-name">Universitas STIA SATYA NEGARA Palembang</span>
+                <span class="edu-major">Ilmu Administrasi</span>
+                <span class="edu-year dim">—</span>
+              </div>
+            </div>
+            <div class="edu-item">
               <div class="edu-left"><span class="edu-badge">SMK</span></div>
               <div class="edu-right">
                 <span class="edu-name">SMK Muhammadiyah 2 Palembang</span>
@@ -272,7 +327,7 @@
         </div>
       </section>
 
-      <!-- ============ PROYEK ============ -->
+      <!-- ============ PROYEK (AI/Python) ============ -->
       <section id="proyek" class="section">
         <div class="terminal-window">
           <div class="titlebar">
@@ -280,7 +335,7 @@
             <span class="title-text">~ — ls ~/proyek</span>
           </div>
           <div class="term-body">
-            <p class="line dim"><span class="prompt">$</span> <span class="cmd">ls</span> -la ~/proyek <span class="comment"># 6 item</span></p>
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">ls</span> -la ~/proyek <span class="comment"># 6 item — AI &amp; Python</span></p>
             <div class="projects-grid">
 
               <!-- Neurova -->
@@ -292,7 +347,7 @@
                   <p class="p-desc">Aplikasi kesehatan bertenaga AI — "Revolutionizing Healthcare with AI" (Masa Percobaan 🔥)</p>
                   <div class="p-tags"><span class="tag">python</span><span class="tag">ai</span><span class="tag">kesehatan</span></div>
                   <div class="p-links">
-                    <a href="https://github.com/Farrel0xx/Neurova" target="_blank" rel="noopener">[github]</a>
+                    <a href="https://github.com/mantri0xx/Neurova" target="_blank" rel="noopener">[github]</a>
                     <a href="https://www.youtube.com/watch?v=br1oPljSgl4" target="_blank" rel="noopener">[video]</a>
                   </div>
                 </div>
@@ -321,7 +376,7 @@
                   <p class="p-desc">Alat visualisasi DICOM untuk membandingkan dua pemindaian medis berdampingan — dioptimalkan untuk studi segmentasi tumor.</p>
                   <div class="p-tags"><span class="tag">python</span><span class="tag">dicom</span><span class="tag">citra-medis</span></div>
                   <div class="p-links">
-                    <a href="https://github.com/Farrel0xx/3D-slice-brain" target="_blank" rel="noopener">[github]</a>
+                    <a href="https://github.com/mantri0xx/3D-slice-brain" target="_blank" rel="noopener">[github]</a>
                   </div>
                 </div>
               </article>
@@ -371,6 +426,73 @@
         </div>
       </section>
 
+      <!-- ============ WEB DEVELOPMENT PROJECTS ============ -->
+      <section id="webdev" class="section">
+        <div class="terminal-window">
+          <div class="titlebar">
+            <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
+            <span class="title-text">~ — ls ~/webdev</span>
+          </div>
+          <div class="term-body">
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">ls</span> -la ~/webdev <span class="comment"># 3 project — Web Development</span></p>
+            <div class="projects-grid">
+
+              <!-- Clinic EMR -->
+              <article class="project featured">
+                <div class="p-titlebar"><span class="p-dots">●●●</span><span class="p-name">clinic-ehr/</span><span class="p-tag next">NEXT.JS</span></div>
+                <div class="p-body">
+                  <p class="p-cmd"><span class="prompt">$</span> <span class="cmd">run</span> ./clinic-ehr --fullstack</p>
+                  <h3 class="p-name-big">Clinic EMR — Klinik Elon Musk</h3>
+                  <p class="p-desc">Aplikasi Electronic Medical Records (EMR) full-stack untuk klinik. Fitur lengkap: manajemen pasien, billing, antrian, apotek, RBAC 5 role (Admin, Dokter, Kasir, Apoteker, Admisi). Tech: Next.js 16, Prisma 7, PostgreSQL 17, shadcn/ui v4. UI modern dengan dark sidebar, Recharts dashboard, dan SOAP form untuk dokter.</p>
+                  <div class="p-tags">
+                    <span class="tag">next.js</span><span class="tag">prisma</span><span class="tag">postgresql</span>
+                    <span class="tag">shadcn/ui</span><span class="tag">typescript</span><span class="tag">tailwind</span>
+                  </div>
+                  <div class="p-links">
+                    <a href="https://klinik-elon-musk.vercel.app/" target="_blank" rel="noopener">[demo live]</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Starbucks Landing Page -->
+              <article class="project">
+                <div class="p-titlebar"><span class="p-dots">●●●</span><span class="p-name">starbucks-site/</span><span class="p-tag web">HTML5</span></div>
+                <div class="p-body">
+                  <p class="p-cmd"><span class="prompt">$</span> <span class="cmd">run</span> ./starbucks --landing-page</p>
+                  <h3 class="p-name-big">Starbucks Landing Page</h3>
+                  <p class="p-desc">Landing page responsive untuk Starbucks dengan animasi hover, galeri produk, hero section gradient, dan efek card interaktif. Pure HTML5 + CSS3 + JavaScript vanilla — tanpa framework.</p>
+                  <div class="p-tags">
+                    <span class="tag">html5</span><span class="tag">css3</span><span class="tag">javascript</span>
+                    <span class="tag">responsive</span><span class="tag">animations</span>
+                  </div>
+                  <div class="p-links">
+                    <a href="#kontak" class="dim">[demo]</a>
+                  </div>
+                </div>
+              </article>
+
+              <!-- 3D Jembatan Ampera -->
+              <article class="project">
+                <div class="p-titlebar"><span class="p-dots">●●●</span><span class="p-name">ampera-3d/</span><span class="p-tag ai">THREE.JS</span></div>
+                <div class="p-body">
+                  <p class="p-cmd"><span class="prompt">$</span> <span class="cmd">run</span> ./ampera --3d-scroll</p>
+                  <h3 class="p-name-big">3D Jembatan Ampera — Palembang</h3>
+                  <p class="p-desc">Website 3D interaktif scroll-driven animation menampilkan Jembatan Ampera, ikon kota Palembang. Built dengan Three.js untuk rendering 3D real-time, scroll-driven frame animation, dan efek visual cinematic. Tribute untuk kota Palembang.</p>
+                  <div class="p-tags">
+                    <span class="tag">three.js</span><span class="tag">3d</span><span class="tag">scroll-animation</span>
+                    <span class="tag">webgl</span><span class="tag">cinematic</span>
+                  </div>
+                  <div class="p-links">
+                    <a href="https://youtu.be/ipQiCkV7R1k?si=SNCM3gLuH-mx7syO" target="_blank" rel="noopener">[demo video]</a>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- ============ YOUTUBE ============ -->
       <section id="youtube" class="section">
         <div class="terminal-window">
@@ -384,20 +506,28 @@
               <div class="yt-info">
                 <span class="yt-icon">▶</span>
                 <div>
-                  <h3 class="yt-name">Mantri0xx_ <span class="yt-badge">channel</span></h3>
-                  <p class="yt-desc dim">Mendokumentasikan perjalanan — healthtech, AI, dan membangun tools sendiri. Dari HEALTHKATHON sampai asisten suara.</p>
+                  <h3 class="yt-name">mantri0xx_ <span class="yt-badge">channel</span></h3>
+                  <p class="yt-desc dim">Mendokumentasikan perjalanan — healthtech, AI, web development, dan membangun tools sendiri. Dari HEALTHKATHON sampai asisten suara.</p>
                 </div>
                 <a class="yt-sub" href="https://www.youtube.com/@mantri0xx" target="_blank" rel="noopener">SUBSCRIBE</a>
               </div>
             </div>
 
-            <p class="line dim"><span class="prompt">$</span> <span class="cmd">ls</span> ./video <span class="comment"># upload terbaru</span></p>
+            <p class="line dim"><span class="prompt">$</span> <span class="cmd">ls</span> ./video <span class="comment"># 5 video terbaru</span></p>
             <div class="videos">
+              <a class="video" href="https://www.youtube.com/watch?v=0kGDvr5aaFw" target="_blank" rel="noopener">
+                <img loading="lazy" src="https://i1.ytimg.com/vi/0kGDvr5aaFw/hqdefault.jpg" alt="thumbnail" />
+                <div class="v-meta">
+                  <span class="v-title">Upgrade AI Voice Assistant v1.1 || 50+ Global Voices &amp; Voice Typing Demo</span>
+                  <span class="v-date dim">7 hari yang lalu</span>
+                </div>
+                <span class="v-play">▶</span>
+              </a>
               <a class="video" href="https://www.youtube.com/watch?v=xc0QYhEjd04" target="_blank" rel="noopener">
                 <img loading="lazy" src="https://i1.ytimg.com/vi/xc0QYhEjd04/hqdefault.jpg" alt="thumbnail" />
                 <div class="v-meta">
                   <span class="v-title">📌 My Journey at HEALTHKATHON COMPETITION 2025 🏆 | BPJS Kesehatan</span>
-                  <span class="v-date dim">2026-08-08</span>
+                  <span class="v-date dim">10 hari yang lalu</span>
                 </div>
                 <span class="v-play">▶</span>
               </a>
@@ -405,15 +535,15 @@
                 <img loading="lazy" src="https://i1.ytimg.com/vi/UysyxnCAfb8/hqdefault.jpg" alt="thumbnail" />
                 <div class="v-meta">
                   <span class="v-title">BUILDING MY OWN AI VOICE ASSISTANT (VOICE DEMO)</span>
-                  <span class="v-date dim">2026-08-08</span>
+                  <span class="v-date dim">11 hari yang lalu</span>
                 </div>
                 <span class="v-play">▶</span>
               </a>
-              <a class="video" href="https://www.youtube.com/watch?v=lTQPzglfiiw" target="_blank" rel="noopener">
-                <img loading="lazy" src="https://i1.ytimg.com/vi/lTQPzglfiiw/hqdefault.jpg" alt="thumbnail" />
+              <a class="video" href="https://www.youtube.com/watch?v=ipQiCkV7R1k" target="_blank" rel="noopener">
+                <img loading="lazy" src="https://i1.ytimg.com/vi/ipQiCkV7R1k/hqdefault.jpg" alt="thumbnail" />
                 <div class="v-meta">
-                  <span class="v-title">AnswerAI - Kunci Jawaban Soal PDF.</span>
-                  <span class="v-date dim">2025-02-10</span>
+                  <span class="v-title">Cinematic Tourism Concept — Palembang 3D Scroll Experience</span>
+                  <span class="v-date dim">recent</span>
                 </div>
                 <span class="v-play">▶</span>
               </a>
@@ -421,11 +551,13 @@
                 <img loading="lazy" src="https://i1.ytimg.com/vi/br1oPljSgl4/hqdefault.jpg" alt="thumbnail" />
                 <div class="v-meta">
                   <span class="v-title">Neurova App | AI-Powered Healthcare &amp; Innovation (Trial Period) 🚀</span>
-                  <span class="v-date dim">2025-02-09</span>
+                  <span class="v-date dim">1 tahun yang lalu</span>
                 </div>
                 <span class="v-play">▶</span>
               </a>
             </div>
+
+            <p class="line dim subtle"><span class="prompt">$</span> <span class="cmd">echo</span> "video baru terus di-upload — subscribe biar gak ketinggalan!"</p>
           </div>
         </div>
       </section>
@@ -448,8 +580,8 @@
               <span class="prompt">$</span> <span class="cmd">mail</span> --to <span class="dim">→</span> <a href="mailto:mantri.suman17x@gmail.com">mantri.suman17x@gmail.com</a>
               <button class="copy-btn" title="salin">⧉</button>
             </div>
-            <div class="contact-row" data-copy="https://github.com/Farrel0xx">
-              <span class="prompt">$</span> <span class="cmd">gh</span> profil <span class="dim">→</span> <a href="https://github.com/Farrel0xx" target="_blank" rel="noopener">github.com/Farrel0xx</a>
+            <div class="contact-row" data-copy="https://github.com/mantri0xx">
+              <span class="prompt">$</span> <span class="cmd">gh</span> profil <span class="dim">→</span> <a href="https://github.com/mantri0xx" target="_blank" rel="noopener">github.com/mantri0xx</a>
               <button class="copy-btn" title="salin">⧉</button>
             </div>
             <div class="contact-row" data-copy="https://www.youtube.com/@mantri0xx">
@@ -460,7 +592,7 @@
               <span class="prompt">$</span> <span class="cmd">map</span> lokasi <span class="dim">→</span> <span>Palembang, Sumatera Selatan</span>
               <button class="copy-btn" title="salin">⧉</button>
             </div>
-            <p class="line dim subtle"><span class="prompt">$</span> <span class="cmd">echo</span> "terbuka untuk: admin data · kesehatan · klaim BPJS · AI &amp; otomatisasi · remote"</p>
+            <p class="line dim subtle"><span class="prompt">$</span> <span class="cmd">echo</span> "terbuka untuk: admin data · kesehatan · klaim BPJS · AI &amp; otomatisasi · web development · remote"</p>
             <p class="line"><span class="prompt">$</span> <span class="cmd">./kirim_pesan</span> <span class="blink-block">▊</span></p>
           </div>
         </div>
@@ -470,7 +602,7 @@
     <footer class="footer">
       <div class="footer-inner">
         <p><span class="prompt">$</span> <span class="cmd">exit</span></p>
-        <p class="dim">© 2026 SUMANTRI · dibuat dengan ♥ + ☕ di Palembang · ditenagai Python &amp; Claude</p>
+        <p class="dim">© 2026 mantri0xx_ · dibuat dengan ♥ + ☕ di Palembang · ditenagai Python, Next.js &amp; Claude</p>
       </div>
     </footer>
   </div>
